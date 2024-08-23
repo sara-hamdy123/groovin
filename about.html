@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/header &footer .css">
+    <title>Details</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+    html{
+    scroll-behavior: smooth;
+    }
+    body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    .container .top{
+        padding: 15px 8rem;
+        background: #f6f6f6;
+        min-height: 40px;
+        margin-top: 80px;
+        display: flex;
+    }
+    .container .top .left{
+    display: flex;
+    margin-left: 40rem;
+    margin-top: 0.5rem;
+    }
+    .container .top .left {
+    font-size: 18px;
+    }
+    .container .top .left a{
+    color: green;
+    }
+    .container .top h2{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 0.5rem 0;
+    }
+    .container .slider .slide{
+    display: flex;
+    margin: 2rem 7rem 5rem ;
+    }
+    .container .slider .slide .slid img{
+        width: 0;
+        height: 550px;
+        background-size: cover;
+    }
+    .container .slider .slide .slid.active img{
+    width: 100%;
+    }
+    .container .button-sliders{
+    display: flex;
+    width: 50px;
+    margin: -60px 28rem 0 ;
+    justify-content: space-between;
+    position: absolute;
+}
+.container .button-sliders li{
+    width: 11px;
+    height: 11px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+.container  .button-sliders li:hover,
+.container  .button-sliders  li.active{
+    cursor: pointer;
+    background-color: green;
+}
+.container .down {
+display: flex;
+}
+@media screen and (min-width:425px)and (max-width:768px){
+    .container .down {
+        flex-wrap: wrap;
+}
+footer .row{
+        grid-template-columns: repeat(2,1fr);
+}
+        footer .row .col2,
+        footer .row .col3{
+        margin: 1.3rem 0;
+}
+}
+@media screen and (max-width:425px){
+    footer .row{
+        grid-template-columns: repeat(1,1fr);
+}
+}
+.container .down .leftsec{
+    margin: 2rem 0.2rem 5rem -4.5rem;
+    background-color: white;
+    box-shadow: 0px 0 30px rgba(42, 42, 42, 0.08);
+    padding: 2rem;
+    height: 50%;
+    width: 30%;
+}
+.container .down .leftsec .det{
+margin-top: 1rem;
+}
+.container .down .leftsec .det h3{
+border: none;
+padding:2.2rem 0;
+}
+.container .down .leftsec h3{
+padding: 0.9rem;
+border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+}
+.container .down .leftsec ul li{
+padding: 0.7rem 1rem ;
+}
+.container .down .leftsec ul li {
+color: #444444;
+}
+.container .down .leftsec ul li a{
+color: green;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <!-- start header anv-->
+        <section class="navbar" >
+            <h1>GROOVIN</h1>
+            <div class="icons">
+                <i class="fa fa-bars"></i> 
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#home" class="home active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="###" class="drop">Drop Down <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></a>
+                        <ul class="dropdown">
+                            <li>Drop Down 1</li>
+                            <li>Deep Drop Down<i class="fa-solid fa-angle-right" style="margin-left: 4rem;"></i>
+                                <ul class="deepdropdown">
+                                    <li>DeepDropDown1</li>
+                                    <li>DeepDropDown2</li>
+                                    <li>DeepDropDown3</li>
+                                    <li>DeepDropDown4</li>
+                                    <li>DeepDropDown5</li>
+                                </ul>
+                            </li>
+                            <li>Drop Down 2</li>
+                            <li>Drop Down 3</li>
+                            <li>Drop Down 4</li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button>Get Started</button></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- end nav bar-->
+    <div class="container">
+        <div class="top">
+            <h2>Portfolio Details</h2>
+            <div class="left">
+            <a href="##">Home</a>&nbsp;&nbsp;
+            <span> /&nbsp;&nbsp;portfolio details</span>
+            </div>
+        </div>
+        <div class="down">
+        <div class="slider">
+            <ul class="slide">
+                <li class="one-slide slid active">
+                <img src="images/portfolio-1.jpg">
+                </li>
+                <li class="two-slide slid">
+                    <img src="images/portfolio-2.jpg">
+                </li>
+                <li class="three-slide slid">
+                    <img src="images/portfolio-3.jpg">
+                </li>
+            </ul>
+        <ul class="button-sliders">
+            <li class="firstbutton active"></li>
+            <li class="secondbutton"></li>
+            <li class="thirdbutton"></li>
+        </ul>
+        </div>
+        <div class="leftsec">
+            <h3>Project information</h3>
+            <ul>
+                <li><strong>Category:</strong>Web design</li>
+                <li><strong>Client:</strong>ASU Company</li>
+                <li><strong>Project date:</strong>01 March, 2020</li>
+                <li><strong>Project URL:</strong><a href="">www.example.com</a></li>
+            </ul>
+        <div class="det">
+            <h3>This is an example of portfolio detail</h3>
+            <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+        </div>
+        </div> 
+    </div>  
+</div>
+    <!-- start footer-->
+    <footer>
+        <div class="row">
+            <div class="col1">
+                <h3>Groovin</h3><br>
+                <p>A108 Adam Street<br>NY 535022, USA<br><br>
+                <strong>Phone:</strong>+1 5589 55488 55<br>
+                <strong>Email: </strong> info@example.com<br>
+                </p>
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="col2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Home</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">About us</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Services</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Terms of service</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Web Design</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Web Development</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Product Management</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Marketing</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="###">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>Our Newsletter</h3>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <div class="form">
+                    <input type="text">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col">
+                <p>&copy; Copyright Groovin. All Rights Reserved</p>
+                <span>Designed by <a href="##">BootstrapMade</a></span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/home.js"></script>
+</body>
+</html>

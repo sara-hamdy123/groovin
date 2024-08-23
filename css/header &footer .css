@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --black:rgba(0, 0, 0,0.89);
+    --white: white;
+    --green:#5c9f24;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+/* start header nav*/
+header .navbar{
+    background-color: var(--black);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0rem 0.1rem 7rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:1;
+    line-height: 1px;
+}
+header .navbar h1{
+    color: var(--white);
+}
+header .navbar nav .main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7rem ;
+}
+header .navbar nav .main-nav li{
+    display: inline-block;
+}
+header .navbar nav .main-nav li a{
+    padding: 0 1rem;
+    text-transform: uppercase;
+    position: relative;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+header .navbar nav .main-nav li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    height: 3px;
+    width: 0;
+    left: 9px;
+    bottom: -10px;
+}
+header .navbar nav .main-nav li a:hover,
+header .navbar nav .main-nav li a.active{
+    color:rgba(255, 255, 255, 1);
+}
+header .navbar nav .main-nav li a:hover::after,
+header .navbar nav .main-nav li a.active::after{
+    width: 80%;
+}
+header .navbar nav .main-nav li button{
+    border: 3px solid var(--green);
+    border-radius: 4px;
+    margin-left: 14px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--black);
+}
+header .navbar nav .main-nav li button:hover{
+    background-color: var(--green);
+}
+header .navbar nav .main-nav .drop{
+height: 100%;
+}
+header .navbar nav .main-nav .drop:hover ~ .dropdown,
+header .navbar nav .main-nav .dropdown:hover ~ .deepdropdown{
+    display: block;
+}
+header .navbar nav .main-nav .dropdown{
+    background-color: var(--white);
+    position: absolute;
+    top:4rem;
+    right: 20rem;
+    padding: 1.2rem 0rem;
+    display: inline-block;
+    display: none;
+}
+header .navbar nav .main-nav .dropdown li{
+    padding: 1rem 0.4rem;
+    cursor: pointer;
+    display: block;
+}
+header .navbar nav .main-nav .dropdown li:hover,
+header .navbar nav .main-nav .dropdown .deepdropdown li:hover{
+    color: var(--green);
+}
+header .navbar nav .main-nav .dropdown .deepdropdown{
+position: absolute;
+background-color: var(--white);
+right: 13.02rem;
+top:4rem;
+padding: 0.5rem 0.7rem;
+display: inline-block;
+display: none;
+}
+header .navbar nav .main-nav .dropdown .deepdropdown li{
+    padding: 1.4rem 2rem;
+    display: block;
+    letter-spacing: 1px;
+}
+header .navbar .icons i{
+    font-size: 22px;
+    color: white;
+    float: left;
+    line-height: 75px;
+    margin-left: 31rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+/*end header*/
+/* start footer*/
+footer .row{
+    display: grid;
+    grid-template-columns: repeat(3,1.1fr) 1.45fr;
+    background: #1d1d1d;
+    padding: 3.6rem 6.8rem;
+    color: white;
+    font-weight: 200;
+    border-bottom: 1px solid #2f2f2f;
+    margin-top: 3rem;
+    }
+    footer .row .social{
+    padding-top: 1.3rem;
+    }
+    footer .row .social i{
+        padding: 8px 0;
+        background: #2a2a2a;
+        font-size: 18px;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 4px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+    }
+    footer .row .col2 h3{
+    font-size: 17px;
+    }
+    footer .row .col2 ul li a{
+    color: white;
+    }
+    footer .row .col2 ul li{
+    padding-top: 0.85rem;
+    }
+    footer .row .col2 ul li i{
+    color: var(--green);
+    margin-right: 0.5rem;
+    font-size: 14px;
+    }
+    footer .row .col2 ul li a:hover,
+    footer .row .social i:hover{
+    color: var(--green);
+    cursor: pointer;
+    }
+    footer .row .col3 p{
+    font-size: 15px;
+    width: 97%;
+    padding: 1.5rem 0;
+    }
+    footer .row .col3 .form{
+    display: flex;
+    height: 19%;
+    }
+    footer .row .col3 .form input:focus{
+    padding: 0 0.8rem;
+    border: 2px solid rgba(172, 255, 47, 0.541);
+    }
+    footer .row .col3 .form input{
+    width: 66%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    outline: none;
+    }
+    footer .row .col3 .form button{
+    width: 30%;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    }
+    footer .row1 {
+    background: #111111;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    }
+    footer .row1 .col span{
+    font-size: 14px;
+    }
+    footer .row1 .col p{
+    padding-bottom: 0.5rem;
+    }
+    footer .row1 .col span a{
+    color: var(--green);
+    }
+    /* end footer*/
